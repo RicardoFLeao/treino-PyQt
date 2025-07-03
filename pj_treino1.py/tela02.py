@@ -65,15 +65,15 @@ class tela2(QWidget):
 
     def prox_tela(self):
         from tela03 import tela3
-        self.janela3 = tela3()
+        self.janela3 = tela3(self.produtos)
         self.janela3.show()
         self.close()
         
 
-# if __name__ == "__main__":
-#     app = QApplication(sys.argv)
-#     janela = tela2()
-#     janela.show()
-#     sys.exit(app.exec())
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    janela = tela2()
+    janela.show()
+    sys.exit(app.exec())
 
     
